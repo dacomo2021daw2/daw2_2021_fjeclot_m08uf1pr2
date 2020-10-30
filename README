@@ -9,28 +9,35 @@ Requereix tenir instal·lat previament:
 
 ## Pasos a seguir
 
-1. Clonar el repositori GIT:
+1. Clonar el repositori GIT i accedir al directori de treball de la pràctica:
 
 	mkdir m08uf1
 	cd m08uf1
 	git clone https://github.com/dacomo2021daw2/m08uf2pr1.git
+	cd m08uf1pr2
 
 
 2. Canvia el nom de sistema de la màquina virtual:
 
-	2.1 Obre Vagrantfile amb nano, geany o qualsevol IDE.
+	2.1 Obre Vagrantfile amb nano, geany, qualsevol IDE o qualsevol editor de texte pla.
 	2.2 Edita el paràmete config.vm.hostname i fes que el seu nou valor sigui:
 		config.vm.hostname = "xxyyzz2021daw2"
 	NOTA: xxyyzz són les 2 primeres lletres del teu nom, 1r cognom i 2n cognom
 
+3. Afegeix el servidor MySQL mariadb-server, el client MySQL mariadb-client i el mòdul de MySQL per PHP
 
-3. Iniciar la màquina virtual amb les ordres de `Vagrant`:
+	3.1 Obre Vagrantfile amb nano, geany, qualsevol IDE o qualsevol editor de texte pla.
+	3.2 Aprovisiona el programari extra a la secció config.vm.provision afegint:
+		apt-get install -y mariadb-server mariadb-client
+		apt-get install -y php7.3-mysql
 
-	cd m08uf1pr2
+
+4. Iniciar la màquina virtual amb les ordres de `Vagrant`:
+
 	vagrant up
 
 
-4. Accedir a la màquina virtual per SSH, per poder realitzar el curs:
+5. Accedir a la màquina virtual per SSH, per poder realitzar el curs:
 
 	vagrant ssh
 
