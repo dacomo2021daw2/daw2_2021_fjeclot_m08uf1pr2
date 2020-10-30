@@ -13,12 +13,12 @@ Requereix tenir instal·lat previament:
 
 	mkdir m08uf1
 	cd m08uf1
-	git clone https://github.com/dacomo2021daw2/daw2_2021_fjeclot_m08uf1pr2
+	git clone https://github.com/dacomo2021daw2/m08uf1pr2
 
 
 2. Iniciar la màquina virtual amb les comandes de `Vagrant`:
 
-	cd daw2_2021_fjeclot_m08uf1pr2
+	cd m08uf1pr2
 	vagrant up
 
 
