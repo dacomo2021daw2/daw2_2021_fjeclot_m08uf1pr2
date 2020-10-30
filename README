@@ -31,13 +31,17 @@ Requereix tenir instal·lat previament:
 		apt-get install -y mariadb-server mariadb-client
 		apt-get install -y php7.3-mysql
 
+4. Afegeix un port forwarding per exposar el port 443 de la màquina virtual al port 1443 de la màquina host:
 
-4. Iniciar la màquina virtual amb les ordres de `Vagrant`:
+	4.1 Obre Vagrantfile amb nano, geany, qualsevol IDE o qualsevol editor de texte pla. 
+	4.2 Afegeix config.vm.network "forwarded_port", guest: 443, host: 1443
+
+5. Iniciar la màquina virtual amb les ordres de `Vagrant`:
 
 	vagrant up
 
 
-5. Accedir a la màquina virtual per SSH, per poder realitzar el curs:
+6. Accedir a la màquina virtual per SSH, per poder realitzar el curs:
 
 	vagrant ssh
 
