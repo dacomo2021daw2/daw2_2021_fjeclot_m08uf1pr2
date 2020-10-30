@@ -18,7 +18,7 @@ Requereix tenir instal·lat previament:
 
 2. Iniciar la màquina virtual amb les comandes de `Vagrant`:
 
-	cd m08uf1pr2
+	cd daw2_2021_fjeclot_m08uf1pr2
 	vagrant up
 
 
