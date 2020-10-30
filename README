@@ -1,0 +1,44 @@
+# DAW2 M08UF1 2020-2021 FJE CLOT
+
+## Requisits
+
+Requereix tenir instal·lat previament:
+1. Git https://git-scm.com/
+2 Virtualbox https://www.virtualbox.org/
+3. Vagrant https://www.vagrantup.com/
+
+## Pasos a seguir
+
+1. Clonar el repositori GIT:
+
+	mkdir m08uf1
+	cd m08uf1
+	git clone https://github.com/dacomo2021daw2/m08uf1pr2
+
+
+2. Iniciar la màquina virtual amb les comandes de `Vagrant`:
+
+	cd m08uf1pr2
+	vagrant up
+
+
+3. Accedir a la màquina virtual per SSH, per poder realitzar el curs:
+
+	vagrant ssh
+
+
+## Problemes amb `vagrant ssh`
+
+Si no aconseguim accedir amb `vagrant ssh`, realitzem les següents passes:
+
+1. Accedir a Virtualbox, seleccionar la màquina virtual de la formació devops docker i premer el botó de "Mostrar". 
+2. Accedir a la pantalla de terminal de la màquina virtual de Virtuabbox. Això desbloquejarà la creació de la màquina virtual.
+3. Tornar la línia de comandes, i executar:
+
+```bash
+vagrant provision
+vagrant ssh
+```
+
+Tanbé podeu accedir directament a la màquina virtual, via Virtualbox, amb usuari `vagrant` i contrasenya `vagrant`.
+
