@@ -23,6 +23,7 @@ Requereix tenir instal·lat previament:
 		config.vm.hostname = "xxyyzz2021daw2"
 	NOTA: xxyyzz són les 2 primeres lletres del teu nom, 1r cognom i 2n cognom
 
+
 3. Iniciar la màquina virtual amb les ordres de `Vagrant`:
 
 	cd m08uf1pr2
