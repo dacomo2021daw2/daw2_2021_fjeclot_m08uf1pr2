@@ -16,13 +16,20 @@ Requereix tenir instal·lat previament:
 	git clone https://github.com/dacomo2021daw2/m08uf2pr1.git
 
 
-2. Iniciar la màquina virtual amb les comandes de `Vagrant`:
+2. Canvia el nom de sistema de la màquina virtual:
+
+	2.1 Obre Vagrantfile amb nano, geany o qualsevol IDE.
+	2.2 Edita el paràmete config.vm.hostname i fes que el seu nou valor sigui:
+		config.vm.hostname = "xxyyzz2021daw2"
+	NOTA: xxyyzz són les 2 primeres lletres del teu nom, 1r cognom i 2n cognom
+
+3. Iniciar la màquina virtual amb les ordres de `Vagrant`:
 
 	cd m08uf1pr2
 	vagrant up
 
 
-3. Accedir a la màquina virtual per SSH, per poder realitzar el curs:
+4. Accedir a la màquina virtual per SSH, per poder realitzar el curs:
 
 	vagrant ssh
 
