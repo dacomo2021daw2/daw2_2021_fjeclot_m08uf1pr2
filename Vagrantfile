@@ -1,5 +1,6 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "generic/debian10"
+  config.vm.hostname = "dacomo"
   config.vm.provider "virtualbox" do |v|
     # v.gui = true
     v.name = "m08uf1pr2"
