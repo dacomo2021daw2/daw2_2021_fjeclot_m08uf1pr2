@@ -1,4 +1,4 @@
-# DAW2 M08UF1 2020-2021 FJE CLOT
+# DAW2 M08UF1 2021-2022 FJE CLOT
 
 ## Requisits
 
@@ -13,7 +13,7 @@ Requereix tenir instal·lat previament:
 
 	mkdir m08uf1
 	cd m08uf1
-	git clone https://github.com/dacomo2021daw2/m08uf2pr1.git
+	git clone https://github.com/dacomo2021daw2/m08uf1pr2.git
 	cd m08uf1pr2
 
 
