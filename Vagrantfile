@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
   
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update -y
-    sudo apt-get upgrade -y
+    # sudo apt-get upgrade -y
     sudo apt-get install -y net-tools
     sudo apt-get install -y apache2 apache2-doc
     sudo apt-get install -y libapache2-mod-php
